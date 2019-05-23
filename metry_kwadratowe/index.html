@@ -1,0 +1,41 @@
+<!doctype HTML>
+<head>
+<!-- copyright Tomasz Kuczera 2019 -->
+<title>Kalkulator</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="res/style.css">
+</head>
+<body>
+<p id="tytul">Kalkulator ilości płytek potrzebnych do wykończenia łazienki</p>
+<br />
+<br />
+<br />
+<p id="sciana_pow">Podaj powierzchnię ścian w łazience (łącznie) w metrach kwadratowych:</p>
+<input id="sciany" value="20"></input>
+<br />
+<br />
+<p id="plytki">Podaj wymiary płytki w centymetrach:</p>
+<form>
+Szerokość: <input id="szer" value="20"></input>
+<br />
+Wysokość: <input id="wys" value="10"></input>
+</form>
+<br />
+<button type="button" id="button" onClick="f1()"> Oblicz liczbę płytek </button>
+<div id="wyjscie"></div>
+<script>
+function f1()
+	{
+		var sciana = parseInt(document.getElementById("sciany").value);
+		var sciana2 = sciana * 10000;
+		var szer = parseInt(document.getElementById("szer").value);
+		var wys = parseInt(document.getElementById("wys").value);
+		var kaf = szer * wys;
+		var tres = "Ilość płytek potrzebna do wykończenia łazienki: "; 
+		var wynik = sciana2 / kaf;
+		var tresc = tres + wynik;
+		wyjscie.innerHTML = tresc;
+	}
+</script>
+</body>
+</html>
