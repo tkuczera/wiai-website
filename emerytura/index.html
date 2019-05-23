@@ -1,0 +1,38 @@
+<!doctype HTML>
+<head>
+<!-- copyright Tomasz Kuczera 2019 -->
+<meta charset="UTF-8">
+<title>Emeryturka</title>
+<link rel="stylesheet" type="text/css" href="res/style.css">
+</head>
+<body>
+<p id="tytul">Kalkulator pozostałych lat do emerytury</p>
+<br />
+<br />
+<form>
+Imię: <input id="imie" value="Tomasz"></input><br />
+<br />
+Nazwisko: <input id="nazwisko" value="Kuczera"></input><br />
+<br />
+Wiek: <input id="wiek" value="18"></input><br />
+</form>
+<p id="emerytura">Ile lat zostało do emerytury?</p>
+<button type="button" id="button" onClick="f1()">Oblicz</button>
+<div id="div"></div>
+<script>
+function f1()
+	{
+		var imie = document.getElementById("imie").value;
+		var nazwisko = document.getElementById("nazwisko").value;
+		var wiek = document.getElementById("wiek").value;
+		var eme = "Do emerytury ";
+		var zos = " zostało ";
+		var spa = " ";
+		var emee = 65 - wiek;
+		var lat = " lat."
+		var tresc = eme + imie + spa + nazwisko + zos + emee + lat;
+		document.getElementById("div").innerHTML = tresc;
+	}
+</script>
+</body>
+</html>
