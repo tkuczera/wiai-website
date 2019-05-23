@@ -1,0 +1,22 @@
+<! doctype HTML>
+<head>
+<!-- copyright Tomasz Kuczera 2019 -->
+<meta charset="UTF-8">
+<script type="text/javascript" src="res/skrypt.js"></script>
+<link rel="stylesheet" type="text/css" href="res/style.css">
+</head>
+<body>
+<p id="tytul">Zmiana napisu skryptem osadzonym oraz zewnętrznym</p>
+<br />
+<br />
+<button type="button" id="button1" onClick="zN1()">Naciśnij w celu zmiany napisu poniżej</button>
+<p id="Paragraf1">Napis początkowy.</p>
+<button type="button" id="button2" onClick="zN2()">Naciśnij w celu zmiany napisu poniżej</button>
+<p id="Paragraf2">Napisz początkowy.</p>
+<script>
+function zN1() {
+	Paragraf1.innerHTML = "Informacja z funkcji zdefiniowanej w skrypcie osadzonym...";
+	}
+</script>
+</body>
+</html>
