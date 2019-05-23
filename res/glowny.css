@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	background-image: url("tlo_index.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+#par {
+	font-family: 'Roboto Slab', serif;
+	font-size:  36px;
+	color: white;
+	text-align: center;
+	text-shadow: 4px 4px 5px #171819;
+}
+
+#a1, ul, li, #spis, #lista {
+	font-family: 'Roboto', sans-serif;
+	color: #cecece;
+	text-align: center;
+	text-shadow: 4px 4px 5px #171819;
+}
+
+#kontakt, #disclaimer, #copy {
+	font-family: 'Roboto Slab', serif;
+	color: #a0a0a0;
+	text align: center;
+	text-shadow: 4px 4px 5px #171819;
+}
+
+#a2 {
+	font-family: 'Roboto Slab', serif;
+	color: #2483e5;
+	text-align: center;
+	text-shadow: 4px 4px 5px #171819;
+}
